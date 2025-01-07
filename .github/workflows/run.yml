@@ -24,7 +24,14 @@ jobs:
           
       - name: 开始
         env:
-            CONFIG: ${{ secrets.CONFIG }}
+            CONFIG: {
+    "USER": "908090958@qq.com#861039935@qq.com",
+    "PWD": "hg8521456#HhHh1234.",
+    "MIN_STEP": "25000",
+    "MAX_STEP": "40000",
+    "PUSH_PLUS_TOKEN": "",
+    "PUSH_PLUS_HOUR": ""
+  }
         run: |
           pip3 install requests pytz
           python3 main.py
